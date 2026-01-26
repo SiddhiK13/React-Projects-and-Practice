@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h3>Change Background Image (onchange)</h3>
+    <input type="text" placeholder="Enter image path..." onchange="document.body.style.backgroundImage='url(' + this.value + ')'">  <br><br>
+
+
+
+
+    <p id="text">This is a sample paragraph.</p>
+    <button onclick="changeFont()">Change Font</button>   <br><br>
+
+
+
+    <select onchange="document.body.style.backgroundColor=this.value">
+        <option value="">Select Color</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightpink">Light Pink</option>
+        <option value="lightyellow">Light Yellow</option>
+    </select><br><br>
+
+
+
+    <h3>Change Image by Clicking Color Buttons</h3>
+    <img id="img1" src="./img/bg1.jpg"><br>
+    <button onclick="changeImage('red')">Red</button>
+    <button onclick="changeImage('green')">Green</button>
+    <button onclick="changeImage('blue')">Blue</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

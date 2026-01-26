@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1. Mouse Events-->
+    <h3>onclick Example</h3>
+    <button onclick="showMsg()">Click Me</button>
+
+    <h3>onmousedown Example</h3>
+    <button onmousedown="downMsg()">Hold Mouse Down</button>
+
+    <h3>onmouseup Example</h3>
+    <button onmouseup="upMsg()">Release Mouse</button>
+
+    <h3>onmouseover Example</h3>
+    <p onmouseover="overMsg()">Hover your mouse here!</p>
+    
+    <h3>onmouseout Example</h3>
+    <p onmouseout="outMsg()">Move mouse away from here!</p>
+
+    <!--2. Form events-->
+
+    <h3>onchange Example</h3>
+    <select onchange="changed()">
+        <option>Select a fruit</option>
+        <option>Apple</option>
+        <option>Mango</option>
+        <option>Banana</option>
+    </select>
+
+    
+    <h3>onfocus Example</h3>
+    <input type="text" onfocus="focusMsg()" placeholder="Click here">
+    
+
+    <h3>onblur Example</h3>
+    <input type="text" onblur="blurMsg()" placeholder="Leave the textbox">
+
+    
+    <!--3. How to get value from an HTML form-->
+    <h3>Get Value from Form</h3>
+    <input type="text" id="uname" placeholder="Enter name">
+    <button onclick="getValue()">Submit</button>
+
+
+    <!--4. Using this keyword-->
+    <h3>this Keyword Example</h3>
+    <input type="text" onfocus="highlight(this)" placeholder="Click me">
+
+    <!--5. Using setAttribute() method-->
+    <h3>setAttribute() Example</h3>
+    <img id="pic" src="img1.jpg" width="100">
+    <button onclick="changeImage()">Change Image</button>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
