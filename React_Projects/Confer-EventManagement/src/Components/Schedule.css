@@ -1,0 +1,173 @@
+
+
+/* Main Section */
+.schedule {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #14185a 0%, #0c0f3a 100%);
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Headings */
+.subtitle {
+  color: #ff4fd8;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Tabs */
+.tabs {
+  display: inline-flex;
+  background: #1c216b;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  color: #bfc3ff;
+  padding: 15px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.tabs button span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.tabs button:hover {
+  background: #2a2f85;
+}
+
+.tabs .active {
+  background: #3b409b;
+  color: #ffffff;
+}
+
+/* Schedule List */
+.schedule-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Schedule Card */
+.schedule-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1b1f63;
+  border: 1px solid #2c318a;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+/* Left Section */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  flex: 1;
+}
+
+.left img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.left h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.left p {
+  font-size: 13px;
+  color: #bfc3ff;
+}
+
+.left span {
+  color: #8c90ff;
+}
+
+/* Middle Section */
+.middle {
+  font-size: 13px;
+  color: #d0d2ff;
+  text-align: left;
+  flex: 1;
+}
+
+.middle p {
+  margin: 6px 0;
+}
+
+/* Right Section */
+.right {
+  flex-shrink: 0;
+}
+
+/* Buttons */
+.view-btn {
+  background: linear-gradient(90deg, #7b5cff, #ff4fd8);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  opacity: 0.85;
+}
+
+/* Download Button */
+.download-btn {
+  margin-top: 50px;
+  background: transparent;
+  border: 2px solid #ff4fd8;
+  color: #ffffff;
+  padding: 12px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #ff4fd8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .schedule-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .middle {
+    margin-top: 10px;
+  }
+
+  .right {
+    margin-top: 15px;
+  }
+}

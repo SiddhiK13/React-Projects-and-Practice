@@ -1,0 +1,13 @@
+.blog-page .latest-news {
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.blog-page .news-title,
+.blog-page .news-subtitle {
+  color: #000;
+}
+
+.blog-page .news-card {
+  border: 1px solid #e0e0e0;
+}

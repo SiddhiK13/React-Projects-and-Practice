@@ -1,0 +1,92 @@
+.sponsors {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #14185a 0%, #0c0f3a 100%);
+  color: #fff;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Headings */
+.sponsors-subtitle {
+  color: #ff4fd8;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.sponsors-title {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+.sponsor-grid {
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Card */
+.sponsor-card {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.sponsor-card img {
+  max-width: 100px;      
+  max-height: 90px;     
+  object-fit: contain;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+
+/* Logo Placeholder */
+.logo-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 10px;
+  transition: color 0.3s;
+}
+
+/* Hover Effect */
+.sponsor-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sponsor-card:hover .logo-placeholder {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sponsor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .sponsor-card:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .sponsor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsor-card {
+    border-right: none;
+  }
+}

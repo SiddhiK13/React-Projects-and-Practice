@@ -1,0 +1,11 @@
+/* Remove background image & gradient */
+.speakers-section {
+  background-image: none !important;
+  background-color: #ffffff !important;
+}
+
+.speakers-section .title,
+.speakers-section .subtitle {
+  color: #000;
+}
+

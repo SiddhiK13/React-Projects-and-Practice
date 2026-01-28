@@ -1,0 +1,228 @@
+.about-section {
+  background: linear-gradient(90deg, #0b0f3a, #151b63);
+  padding: 0px 90px;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* LAYOUT */
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  padding: 50px 250px;
+}
+
+/* LEFT */
+
+.about-tag {
+  color: #c061ff;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.about-content h3 {
+  font-size: 25px;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+.about-content p {
+    margin-right: 150px;
+    font-size: 10px;
+    line-height: 1.7;
+    color: #cfd3ff;
+}
+
+.about-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #7a4cff, #c061ff);
+}
+
+/* RIGHT VISUAL */
+.about-visual {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+
+.about-visual img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 360px;
+}
+
+/* COUNTDOWN */
+.about-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 250px;
+}
+
+.countdown-text span {
+  font-size: 12px;
+  color: #c061ff;
+}
+
+.countdown-text h4 {
+    margin-right:20px ; 
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.countdown-boxes {
+  display: flex;
+  gap: 15px;
+}
+
+.count-box {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.count-box h3 {
+  font-size: 30px;
+}
+
+.count-box span {
+  font-size: 12px;
+  color: #cfd3ff;
+}
+
+/* =========================
+   TABLET VIEW
+========================= */
+@media (max-width: 992px) {
+
+  .about-section {
+    padding: 0 40px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 40px;
+    text-align: center;
+  }
+
+  .about-content p {
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .about-visual {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-visual img {
+    height: 300px;
+    position: relative;
+  }
+
+  .about-countdown {
+    flex-direction: column;
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .countdown-text h4 {
+    margin-right: 0;
+  }
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+@media (max-width: 600px) {
+
+  .about-section {
+    padding: 0 20px;
+  }
+
+  .about-container {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .about-tag {
+    font-size: 9px;
+  }
+
+  .about-content h3 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .about-btn {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+
+  .about-visual {
+    width: 260px;
+    height: 260px;
+  }
+
+  .about-visual img {
+    height: 220px;
+  }
+
+  .about-countdown {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .countdown-boxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .count-box {
+    width: 80px;
+    padding: 8px;
+  }
+
+  .count-box h3 {
+    font-size: 22px;
+  }
+
+  .count-box span {
+    font-size: 10px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+@media (max-width: 400px) {
+
+  .about-content h3 {
+    font-size: 18px;
+  }
+
+  .about-visual {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-visual img {
+    height: 190px;
+  }
+}

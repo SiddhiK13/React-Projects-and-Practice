@@ -1,0 +1,29 @@
+.Hero {
+    padding: 120px 20px 80px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;   /* centers the content block */
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Hero-content {
+    max-width: 800px;
+    width: 100%;
+    text-align: left;          /* LEFT aligned text */
+}
+
+/* Title */
+.Hero h1 {
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+/* Subtitle */
+.Hero p {
+    font-weight: 500;
+}
